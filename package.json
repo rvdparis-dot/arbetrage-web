@@ -4,10 +4,11 @@
   "private": true,
   "homepage": "https://rvdparis-dot.github.io/arbetrage-web",
   "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "uuid": "^9.0.0"
-  },
+  "react": "^18.0.0",
+  "react-dom": "^18.0.0",
+  "react-scripts": "^5.0.1",
+  "uuid": "^9.0.0"
+},
   "devDependencies": {
     "gh-pages": "^6.0.0",
     "typescript": "^4.0.0"
