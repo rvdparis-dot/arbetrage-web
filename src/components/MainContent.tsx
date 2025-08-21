@@ -586,4 +586,3 @@ export const MainContent: React.FC = () => {
     </div>
   );
 };
-export { MainContent };
