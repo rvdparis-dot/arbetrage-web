@@ -1,7 +1,9 @@
+
 {
   "name": "arbetrage-web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rvdparis-dot.github.io/arbetrage-web",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.7.0",
@@ -22,10 +24,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://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@github.com/rvdparis-dot/arbetrage-web.git"
-},
+    "deploy": "gh-pages -d build"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -43,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
