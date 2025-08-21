@@ -1,13 +1,13 @@
-// No 'ReportHandler' export in web-vitals 5.x; use inferred types instead.
+import { ReportHandler } from 'web-vitals';
 
-const reportWebVitals = (onPerfEntry?: (metric: any) => void) => {
-  if (onPerfEntry && typeof onPerfEntry === 'function') {
-    import('web-vitals').then(({ onCLS, onFID, onFCP, onLCP, onTTFB }) => {
-      onCLS(onPerfEntry);
-      onFID(onPerfEntry);
-      onFCP(onPerfEntry);
-      onLCP(onPerfEntry);
-      onTTFB(onPerfEntry);
+const reportWebVitals = (onPerfEntry?: ReportHandler) => {
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+      getCLS(onPerfEntry);
+      getFID(onPerfEntry);
+      getFCP(onPerfEntry);
+      getLCP(onPerfEntry);
+      getTTFB(onPerfEntry);
     });
   }
 };
