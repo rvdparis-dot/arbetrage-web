@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/arbetrage-web/static/css/main.cf63fbba.css",
+    "main.js": "/arbetrage-web/static/js/main.e432eaa9.js",
+    "index.html": "/arbetrage-web/index.html",
+    "main.cf63fbba.css.map": "/arbetrage-web/static/css/main.cf63fbba.css.map",
+    "main.e432eaa9.js.map": "/arbetrage-web/static/js/main.e432eaa9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf63fbba.css",
+    "static/js/main.e432eaa9.js"
+  ]
+}
