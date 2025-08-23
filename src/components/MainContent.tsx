@@ -109,7 +109,7 @@ export const MainContent: React.FC = () => {
         decimalOdds: OddsConverter.americanToDecimal(o.odds),
       }))
     );
-  }, [outcomes.map((o) => o.odds).join(",")]);
+  }, [outcomes.map((o) => o.odds).join(",")]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Handlers
   const updateOutcome = (idx: number, name: string, odds: string) => {
